@@ -244,7 +244,7 @@ body {
 }
 
 .blog-post:hover {
-  transform: translateX(-8px);
+  transform: translateX(-2px);
 }
 
 .post-title {
@@ -474,4 +474,5 @@ body {
     font-size: 0.55rem;
   }
 }
+
 
