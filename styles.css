@@ -211,7 +211,7 @@ body {
   width: 80%;
   height: 100vh;
   background-color: #f5f5f5;
-  background-image: url("images/maincontent.png");
+  background-image: url("maincontent.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -474,3 +474,4 @@ body {
     font-size: 0.55rem;
   }
 }
+
