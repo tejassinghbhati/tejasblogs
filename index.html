@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tejas Singh Bhati - Blog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Left Sidebar - Fixed -->
+      <aside class="sidebar">
+        <div class="sidebar-content">
+          <div class="sidebar-main-content">
+            <h1 class="author-name">Tejas Singh Bhati</h1>
+
+            <!-- Search Section -->
+            <div class="search-section">
+              <div class="search-wrapper">
+                <span class="search-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" width="14" height="14">
+                    <circle
+                      cx="11"
+                      cy="11"
+                      r="6"
+                      stroke="currentColor"
+                      stroke-width="1.6"
+                      fill="none"
+                    />
+                    <line
+                      x1="15"
+                      y1="15"
+                      x2="20"
+                      y2="20"
+                      stroke="currentColor"
+                      stroke-width="1.6"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                </span>
+                <input
+                  id="search-input"
+                  type="text"
+                  class="search-input"
+                  placeholder="Search posts..."
+                  autocomplete="off"
+                />
+              </div>
+            </div>
+
+            <!-- Subscribe Section -->
+            <div class="subscribe-section">
+              <h2 class="subscribe-heading">Subscribe</h2>
+              <p class="subscribe-text">
+                Get notified when I publish new posts
+              </p>
+              <input
+                type="email"
+                id="email-input"
+                class="email-input"
+                placeholder="your@email.com"
+              />
+              <button id="subscribe-button" class="subscribe-button">
+                Subscribe
+              </button>
+              <p id="subscribe-message" class="subscribe-message"></p>
+            </div>
+          </div>
+
+          <!-- Footer Links -->
+          <div class="footer-links">
+            <a
+              href="https://x.com/TejasSinghBhati"
+              class="footer-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span class="footer-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="14" height="14">
+                  <path
+                    d="M22 5.9a7.2 7.2 0 0 1-2.1.6 3.6 3.6 0 0 0 1.6-2 7.1 7.1 0 0 1-2.3.9A3.6 3.6 0 0 0 12 8a10.2 10.2 0 0 1-7.4-3.7 3.6 3.6 0 0 0 1.1 4.8A3.5 3.5 0 0 1 4 8.5v.1A3.6 3.6 0 0 0 6.9 12a3.6 3.6 0 0 1-1 .1 3.3 3.3 0 0 1-.7-.1A3.6 3.6 0 0 0 8.7 15a7.3 7.3 0 0 1-4.5 1.5H3.5A10.2 10.2 0 0 0 9 18.2 10.2 10.2 0 0 0 19.3 8v-.5A7.2 7.2 0 0 0 22 5.9Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </span>
+              <span>Twitter</span>
+            </a>
+            <a
+              href="https://github.com/tejassinghbhati"
+              class="footer-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span class="footer-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="14" height="14">
+                  <path
+                    d="M9 19.1c-4 .9-4-2-5.5-2.4M14 21v-3.1a2.7 2.7 0 0 0-.8-2.1c2.7-.3 5.6-1.3 5.6-6a4.6 4.6 0 0 0-1.3-3.2 4.3 4.3 0 0 0-.1-3.2S16.3 3.1 14 4.7a10 10 0 0 0-5 0C6.7 3.1 5.1 3 5.1 3A4.3 4.3 0 0 0 5 6.2a4.6 4.6 0 0 0-1.3 3.2c0 4.6 2.9 5.6 5.6 6a2.7 2.7 0 0 0-.8 2.1V21"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </span>
+              <span>Github</span>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/tejassinghbhati/"
+              class="footer-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span class="footer-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="14" height="14">
+                  <rect
+                    x="3"
+                    y="3"
+                    width="18"
+                    height="18"
+                    rx="2"
+                    ry="2"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                  />
+                  <path
+                    d="M7 17v-7M7 8V7M12 17v-4.5a2.5 2.5 0 0 1 5 0V17"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </span>
+              <span>LinkedIn</span>
+            </a>
+            <a
+              href="https://www.youtube.com/@tejassinghbhati"
+              class="footer-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span class="footer-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="14" height="14">
+                  <path
+                    d="M23.5 6.2a2.8 2.8 0 0 0-2-2C20.9 4 12 4 12 4s-8.9 0-9.5.2a2.8 2.8 0 0 0-2 2A29 29 0 0 0 .5 12a29 29 0 0 0 .5 5.8 2.8 2.8 0 0 0 2 2c.6.2 9.5.2 9.5.2s8.9 0 9.5-.2a2.8 2.8 0 0 0 2-2A29 29 0 0 0 23.5 12a29 29 0 0 0-.5-5.8z"
+                    fill="currentColor"
+                  />
+                  <path d="M9.7 15.1l6.2-3.1-6.2-3.1v6.2z" fill="#fff" />
+                </svg>
+              </span>
+              <span>YouTube</span>
+            </a>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Main Content Area - Scrollable -->
+      <main class="main-content">
+        <div class="content-wrapper">
+          <h2 class="latest-heading">Latest</h2>
+
+          <!-- Blog Posts -->
+          <article class="blog-post">
+            <h3 class="post-title">
+              why that narcissist friend of yours will actually win in life
+            </h3>
+            <div class="post-content">
+              <p class="post-excerpt">
+                Growing up is strange. You admire people who behave properly,
+                who know how to present themselves, carry themselves out there
+                in the world, and you try your best to be the most well behaved
+                person with virtues and manners.
+                <br />
+                This was the case for me, I was that kid who had these
+                aspirations of becoming the very well mannered person I knew.
+                And then on one strange day, you realise that the kid who
+                bullied you back in high school is actually doing amazing
+                things, the friend of yours who used to say shit about other
+                people is pulling interns from companies in the united states,
+                and then for a while you realise that your whole life was a lie!
+              </p>
+
+              <p class="post-full-content" style="display: none">
+                Growing up is strange.
+                <br />
+                You admire people who behave properly, who know how to present
+                themselves, carry themselves out there in the world, and you try
+                your best to be the most well behaved person with virtues and
+                manners.
+                <br />
+                This was the case for me, I was that kid who had these
+                aspirations of becoming the very well mannered person I knew.
+                <br />And then on one strange day, you realise that the kid who
+                bullied you back in high school is actually doing amazing
+                things, the friend of yours who used to say shit about other
+                people is pulling interns from companies in the united states,
+                and then for a while you realise that your whole life was a lie!
+                <br />
+                <br />
+                What happened to that tendency of yours to behave like a servant
+                from one of those soaps from 1990s?
+                <br />
+                The truth is that all those etiquettes, yet they were important,
+                were not the very traits needed for you to get rich, which for
+                some people like me, is one of the parameters of success (at
+                least right now).
+                <br />
+                The fact with narcissists is that even though they think and
+                obsess over themselves and almost end up in jail at a lot of
+                times, they are really good at not paying attention to every
+                single unimportant thing in life.
+                <br />
+                On the random day you are writing a blog to document your own
+                life's experience they are working on something they really
+                obsess over and think would get them somewhere ahead of the
+                person they hate (in some cases, that could be me).
+                <br />
+                Narcissists are selfish creatures, they are not really loved in
+                their own personal circle, yet they can be really influential to
+                people around the world, all they think of is of themselves, and
+                even if you hate them, you know that they are just people with
+                no emotional intelligence whatsoever, you will end up admiring
+                them.
+                <br />
+                <br />
+                So should I say that it is better to be a selfish irritating
+                narcissist than rather be an empathetic person who cares about
+                other people's lives and feeling the whole time?
+                <br />
+                No, absolutely not, since even though they seem cool in movies
+                firing employees without thinking about the fact that the guy
+                has kids to feed at home, a lot of such people never do anything
+                huge in their life.
+                <br />
+                Those wealthy entrepreneurs and businessmen are just a very
+                small percentage of narcissists who make it far in life, rest of
+                them?
+                <br />
+                They obsess so much over themselves that they end up creating a
+                bubble of their own life and their own success in their minds
+                which no one except them gives a fuck about on the entire
+                planet.
+                <br />
+                And to validate this kind of behaviour that these people carry
+                around themselves they make others feel bad about themselves,
+                and in reality, they live pretty fucked up lives inside their
+                own brain chasing superiority over others in one form or another
+                their whole lives.
+                <br />
+                <br />
+                So why do I say that the narcissist friend of yours will
+                actually succeed in life?
+                <br />
+                Well that is because if this friend of yours will chase
+                superiority over others through hard work, determination and
+                discipline, there is a huge possibility that they might end up
+                becoming pretty fucking big of a deal, similar to the one they
+                are in their mind right now.
+                <br />
+                <br />
+                To draw up a conclusion I might say that we should all have some
+                narcissistic qualities in ourselves, should'nt we?
+                <br />
+                Tejas Singh Bhati
+              </p>
+            </div>
+            <div class="post-footer">
+              <a href="#" class="read-more">Read more</a>
+              <span class="read-time">| 14-01-2026</span>
+            </div>
+          </article>
+        </div>
+      </main>
+    </div>
+
+    <script>
+      (function () {
+        const searchInput = document.getElementById("search-input");
+        const posts = Array.from(document.querySelectorAll(".blog-post"));
+
+        if (!searchInput || !posts.length) return;
+
+        function normalize(text) {
+          return text.toLowerCase().trim();
+        }
+
+        searchInput.addEventListener("input", function (event) {
+          const query = normalize(event.target.value);
+
+          posts.forEach(function (post) {
+            const title = post.querySelector(".post-title");
+            const excerpt = post.querySelector(".post-excerpt");
+
+            const haystack = normalize(
+              (title ? title.textContent : "") +
+                " " +
+                (excerpt ? excerpt.textContent : "")
+            );
+
+            if (!query || haystack.includes(query)) {
+              post.style.display = "";
+            } else {
+              post.style.display = "none";
+            }
+          });
+        });
+
+        // Expand/collapse blog posts
+        posts.forEach(function (post) {
+          const readMoreLink = post.querySelector(".read-more");
+          const excerpt = post.querySelector(".post-excerpt");
+          const fullContent = post.querySelector(".post-full-content");
+
+          if (!readMoreLink || !excerpt || !fullContent) return;
+
+          readMoreLink.addEventListener("click", function (e) {
+            e.preventDefault();
+
+            const isExpanded = fullContent.style.display !== "none";
+
+            if (isExpanded) {
+              // Collapse
+              excerpt.style.display = "";
+              fullContent.style.display = "none";
+              readMoreLink.textContent = "Read more";
+            } else {
+              // Expand
+              excerpt.style.display = "none";
+              fullContent.style.display = "";
+              readMoreLink.textContent = "Read less";
+            }
+          });
+        });
+
+        // Subscribe functionality
+        const emailInput = document.getElementById("email-input");
+        const subscribeButton = document.getElementById("subscribe-button");
+        const subscribeMessage = document.getElementById("subscribe-message");
+
+        if (emailInput && subscribeButton && subscribeMessage) {
+          function validateEmail(email) {
+            const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return re.test(email);
+          }
+
+          function getSubscribedEmails() {
+            const stored = localStorage.getItem("blogSubscribers");
+            return stored ? JSON.parse(stored) : [];
+          }
+
+          function saveSubscribedEmail(email) {
+            const emails = getSubscribedEmails();
+            if (!emails.includes(email.toLowerCase())) {
+              emails.push(email.toLowerCase());
+              localStorage.setItem("blogSubscribers", JSON.stringify(emails));
+            }
+          }
+
+          function showMessage(text, isError) {
+            subscribeMessage.textContent = text;
+            subscribeMessage.className =
+              "subscribe-message " + (isError ? "error" : "success");
+            subscribeMessage.style.display = "block";
+
+            setTimeout(function () {
+              subscribeMessage.style.opacity = "0";
+              setTimeout(function () {
+                subscribeMessage.style.display = "none";
+                subscribeMessage.style.opacity = "1";
+              }, 300);
+            }, 3000);
+          }
+
+          subscribeButton.addEventListener("click", function () {
+            const email = emailInput.value.trim();
+
+            if (!email) {
+              showMessage("Please enter your email address", true);
+              return;
+            }
+
+            if (!validateEmail(email)) {
+              showMessage("Please enter a valid email address", true);
+              return;
+            }
+
+            // Check if already subscribed
+            const subscribedEmails = getSubscribedEmails();
+            if (subscribedEmails.includes(email.toLowerCase())) {
+              showMessage("You are already subscribed!", false);
+              emailInput.value = "";
+              return;
+            }
+
+            // Save email
+            saveSubscribedEmail(email);
+            showMessage(
+              "Successfully subscribed! You will be notified of new posts.",
+              false
+            );
+            emailInput.value = "";
+          });
+
+          // Allow Enter key to submit
+          emailInput.addEventListener("keypress", function (e) {
+            if (e.key === "Enter") {
+              subscribeButton.click();
+            }
+          });
+        }
+      })();
+    </script>
+  </body>
+</html>
